@@ -21,6 +21,10 @@ And run the program:
 ./graphiql-cli
 ```
 
+<br/>
+
+Or you can get a binary in the [releases](https://github.com/LuisHenriqueFA14/graphiql-cli/releases/) page.
+
 
 ### Examples:
 
