@@ -55,9 +55,9 @@ func HandleUserInput(input string) string {
 		LastTabCounter += 1
 	}
 
-	input = strings.ReplaceAll(input, "\"", "\\" + "\"")
+	input = strings.Replace(input, "\"", "\\" + "\"", strings.Count(input, "\""))
 
 	LastTabCounter += strings.Count(input, "\t")
 
-	return strings.ReplaceAll(input, "\t", "") + " "
+	return strings.Replace(input, "\t", "", strings.Count(input, "\"")) + " "
 }
